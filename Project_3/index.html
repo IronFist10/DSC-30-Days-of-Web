@@ -3,31 +3,63 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Porfolio | Krishana Kumar</title>
     <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
     <!-- Header -->
     <div class="main-wrap">
-      <div class="navbar">
-        <nav>
-          <ul class="nav-items">
-            <li id="logo"><"Krishana Kumar"/></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Skills</a></li>
-            <li><a href="#">Education</a></li>
-            <li><a href="#">Contact</a></li>
+      <nav
+        class="navbar navbar-expand-lg navbar-dark bg-dark py-4 justify-content-between"
+      >
+        <a class="navbar-brand" id="logo" href="#"><code>&lt;Krishana&gt;</code></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Education</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
           </ul>
-        </nav>
-      </div>
+        </div>
+      </nav>
 
       <!-- Home -->
-      <div class="home">
-        <div id="home-left">
+      <div class="home row">
+        <div id="home-left" class="col-md-6">
           <img id="portrait" src="assets/portrait.png" alt="profile picture" />
         </div>
 
-        <div id="home-right">
+        <div id="home-right" class="col-md-6">
           <div id="home-content">
             <h1>Hi... I'm Krishana,</h1>
             <h2>FRONT-END DEVELOPER</h2>
@@ -56,14 +88,14 @@
         </div>
       </div>
       <!-- About  -->
-      <div class="about">
-        <div id="about-left">
+      <div class="about row">
+        <div id="about-left" class="col-md-6">
           <div>
-            <h1>About Me</h1>
+            <h1 class="display-4">About Me</h1>
           </div>
         </div>
 
-        <div id="about-right">
+        <div id="about-right" class="col-md-6">
           <div>
             <p>
               I've built enough small projects and taught myself enough HTML,
@@ -82,60 +114,83 @@
       </div>
 
       <!-- Skills -->
-      <div>
+      <div class="skills">
         <h1>Skills</h1>
-        <div class="skills">
-          <div>
-            <h5>Web Devopement</h5>
-            <p>
-              Well versed with HTML CSS and JS Completed the Web-Development
-              course offered by Udemy.
-            </p>
+        <div class="row">
+          <div class="col-sm-12 col-md-6 col-xl-3">
+            <div class="card text-center" style="height: 20rem">
+              <div class="card-body">
+                <h5 class="card-title">Web Devopement</h5>
+                <p class="card-text">
+                  Well versed with HTML CSS and JS Completed the Web-Development
+                  course offered by Udemy.
+                </p>
+              </div>
+            </div>
           </div>
-          <div>
-            <h5>Algorithm & Data Structures</h5>
-            <p>
-              Versed with the Algorithms & Data Structures I'm thorough with the
-              concepts of C and C++. Successfully completed the course offered
-              by Coding Blocks.
-            </p>
+          <div class="col-sm-12 col-md-6 col-xl-3">
+            <div class="card text-center" style="height: 20rem">
+              <div class="card-body">
+                <h5 class="card-title">Algorithm & Data Structures</h5>
+                <p class="card-text">
+                  Versed with the Algorithms & Data Structures I'm thorough with
+                  the concepts of C and C++. Successfully completed the course
+                  offered by Coding Blocks.
+                </p>
+              </div>
+            </div>
           </div>
-          <div>
-            <h5>React JS</h5>
-            <p>
-              Started Learing React JS, Currently understanding and working on
-              the concepts of React Js.
-            </p>
+          <div class="col-sm-12 col-md-6 col-xl-3">
+            <div class="card text-center" style="height: 20rem">
+              <div class="card-body">
+                <h5 class="card-title">React JS</h5>
+                <p class="card-text">
+                  Started Learing React JS, Currently understanding and working
+                  on the concepts of React Js.
+                </p>
+              </div>
+            </div>
           </div>
-          <div>
-            <h5>Familiar with Backend</h5>
-            <p>Know the basic concepts of MongoDB, Express and Node</p>
+          <div class="col-sm-12 col-md-6 col-xl-3">
+            <div class="card text-center" style="height: 20rem">
+              <div class="card-body">
+                <h5 class="card-title">Familiar with Backend</h5>
+                <p class="card-text">
+                  Know the basic concepts of MongoDB, Express and Nodejs
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+
       <!-- Education -->
       <div>
-        <h1>Education</h1>
         <div class="education">
-          <section>
-            <div>
-              <table>
-                <tr>
-                  <th>Graduation</th>
-                  <th>Higher Secondary School</th>
-                  <th>Secondary School</th>
-                </tr>
+        <h1>Education</h1>
 
-                <tr align="center">
-                  <td>BTech in CSE - BVCOE, GGSIP University, New Delhi</td>
-                  <td>C.R.P.F Public School, New Delhi</td>
-                  <td>C.R.P.F Public School, New Delhi</td>
-                </tr>
-                <tr align="center">
-                  <td>2018 - Till Present</td>
-                  <td>2015-2017</td>
-                  <td>2013-2015</td>
-                </tr>
+          <section>
+            <div class="table table-responsive-lg">
+              <table>
+                <thead class="thead-dark">
+                  <tr>
+                    <th scope="col">Graduation</th>
+                    <th scope="col">Higher Secondary School</th>
+                    <th scope="col">Secondary School</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="bg-info">
+                    <td>BTech in CSE - BVCOE, GGSIP University, New Delhi</td>
+                    <td>C.R.P.F Public School, New Delhi</td>
+                    <td>C.R.P.F Public School, New Delhi</td>
+                  </tr>
+                  <tr class="bg-success">
+                    <td>2018 - Till Present</td>
+                    <td>2015-2017</td>
+                    <td>2013-2015</td>
+                  </tr>
+                </tbody>
               </table>
             </div>
           </section>
@@ -143,45 +198,68 @@
       </div>
 
       <!-- Contact -->
-      <div>
+      <div class="contact">
         <h1>Contact Me</h1>
-        <div id="contact">
-          <br />
+        <div  class="row">
+          <!-- <br /> -->
           <!-- contact form  -->
-          <form action="">
-            <label for="text">Name :</label>
-            <br />
-            <input type="text" name="name" placeholder="First Name" required />
-            <input type="text" placeholder="Last Name" />
-            <br />
-            <br />
-            <label for="email">Email : </label>
-            <br />
-            <input
-              type="email"
-              name="email"
-              placeholder="Email Address"
-              required
-            />
-            <br />
-            <br />
-            <label for="message">Message : </label>
-            <br />
-            <textarea name="message" placeholder="Message"></textarea>
-            <br />
-            <br />
-            <input type="button" value="Submit" />
-            <br />
-            <br />
-          </form>
-        </div>
+          <div class="col-xl-6">
+            <form action="">
+              <label for="text">Name :</label>
+              <br />
+              <input
+                type="text"
+                name="name"
+                placeholder="First Name"
+                required
+              />
+              <br>
+              <input type="text" placeholder="Last Name" />
+              <br />
+              <br />
+              <label for="email">Email : </label>
+              <br />
+              <input
+                type="email"
+                name="email"
+                placeholder="Email Address"
+                required
+              />
+              <br />
+              <br />
+              <label for="message">Message : </label>
+              <br />
+              <textarea name="message" placeholder="Message"></textarea>
+              <br />
+              <br />
+              <input type="button" value="Submit" />
+              <br />
+              <br />
+            </form>
+          </div>
+          <!-- <div class="col-xl-6"></div> -->
       </div>
 
-      <footer>
+      <footer class="bg-primary">
         <div>
-          <h5>&copy; 2020 Krishana Kumar | All Rights Reserved</h5>
+          <h5>&copy; 2020 Krishana Kumar</h5>
         </div>
       </footer>
     </div>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
