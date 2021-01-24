@@ -1,10 +1,10 @@
 {
-  "name": "DSC-30-Days-of-Web",
+  "name": "portfolio",
   "version": "1.0.0",
   "description": "<img src=\"https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=for-the-badge\" alt=\"PRs Welcome\" /> <a href=\"https://github.com/30DaysofWebDEV/DSC-30-Days-of-Web/pulls\" target=\"_blank\">",
   "main": "index.js",
   "scripts": {
-    "deploy": "gh-pages -d Todo-app"
+    "deploy": "gh-pages -d portfolio"
   },
   "repository": {
     "type": "git",
